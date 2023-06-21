@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li>
+                  <img src="./images/dashbored.png" alt="search-icon" width="15" height="15">
+                  <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <img src="./images/plane.png" alt="search-icon" width="15" height="15">
+                    <a href="flight-management.html">Flight Management</a>
+                  </li>
+                  <li>
+                    <img src="./images/imageedit_5_8674778549.png" alt="search-icon" width="15" height="15">
+                    <a href="booking-management.html">Booking Management</a>
+                  </li>
+                  <li>
+                    <img src="./images/user.png" alt="search-icon" width="15" height="15">
+                    <a href="user-management.html">User Management</a>
+                  </li>
+                  <li>
+                    <img src="./images/pie_chart.png" alt="search-icon" width="15" height="15">
+                    <a href="analytics-reports.html">Analytics & Reports</a>
+                  </li>
+                  
+                  <li>
+                    <img src="./images/events.png" alt="search-icon" width="15" height="15">
+                    <a href="content-management.html">Events</a>
+                  </li>
+                  <li>
+                    <img src="./images/settings.png" alt="search-icon" width="15" height="15">
+                    <a href="system-settings.html">Settings</a>
+                  </li>
+                  <li>
+                      <img src="./images/logout.png" alt="search-icon" width="15" height="15">
+                      <a href="system-settings.html">Log Out</a>
+                    </li>
+                </ul>
+              
+        </div>
+        <div class="nav">
+        <div id="search" > 
+        <img src="./images/search.png" alt="search-icon">
+        <input type="text" placeholder="Search..">
+    </div>
+    <div class="date-container">
+        <span class="date" id="date"></span>
+        <span class="arrow-down"></span>
+      </div>
+      
+      
+        <div id="notfiy">
+            <img src="./images/ring.png" alt="ring-icon">
+            <img src="./images/admin.jpg" alt="user-icon">
+            <span class="arrow-down"></span>
+            
+        </div>
+            
+        </div>
+        <div class="main">main</div>
+        <div class="footer">Footer</div>
+    </div>  
+    <script>
+        // Function to get the formatted date
+function getFormattedDate() {
+  const date = new Date();
+  const options = { weekday: 'long', day: 'numeric', month: 'long' };
+  return date.toLocaleDateString('en-US', options);
+}
+
+// Update the date element with the formatted date
+document.getElementById('date').textContent = getFormattedDate();
+
+    </script>
+</body>
+</html>
