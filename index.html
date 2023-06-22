@@ -5,46 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Nunito:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <div class="container">
         <div class="sidebar">
-            <ul>
+            <ul class="list">
                 <li>
                   <img src="./images/dashbored.png" alt="search-icon" width="15" height="15">
                   <a href="dashboard.html">Dashboard</a>
                 </li>
                 <li>
-                    <img src="./images/plane.png" alt="search-icon" width="15" height="15">
-                    <a href="flight-management.html">Flight Management</a>
-                  </li>
-                  <li>
-                    <img src="./images/imageedit_5_8674778549.png" alt="search-icon" width="15" height="15">
-                    <a href="booking-management.html">Booking Management</a>
-                  </li>
-                  <li>
-                    <img src="./images/user.png" alt="search-icon" width="15" height="15">
-                    <a href="user-management.html">User Management</a>
-                  </li>
-                  <li>
-                    <img src="./images/pie_chart.png" alt="search-icon" width="15" height="15">
-                    <a href="analytics-reports.html">Analytics & Reports</a>
-                  </li>
-                  
-                  <li>
-                    <img src="./images/events.png" alt="search-icon" width="15" height="15">
-                    <a href="content-management.html">Events</a>
-                  </li>
-                  <li>
-                    <img src="./images/settings.png" alt="search-icon" width="15" height="15">
-                    <a href="system-settings.html">Settings</a>
-                  </li>
-                  <li>
-                      <img src="./images/logout.png" alt="search-icon" width="15" height="15">
-                      <a href="system-settings.html">Log Out</a>
-                    </li>
+                  <img src="./images/plane.png" alt="search-icon" width="15" height="15">
+                  <a href="flight-management.html">Flight Management</a>
+                </li>
+                <li>
+                  <img src="./images/imageedit_5_8674778549.png" alt="search-icon" width="15" height="15">
+                  <a href="booking-management.html">Booking Management</a>
+                </li>
+                <li>
+                  <img src="./images/user.png" alt="search-icon" width="15" height="15">
+                  <a href="user-management.html">User Management</a>
+                </li>
+                <li>
+                  <img src="./images/pie_chart.png" alt="search-icon" width="15" height="15">
+                  <a href="analytics-reports.html">Analytics & Reports</a>
+                </li>
+                <li>
+                  <img src="./images/events.png" alt="search-icon" width="15" height="15">
+                  <a href="content-management.html">Events</a>
+                </li>
+                <li>
+                  <img src="./images/settings.png" alt="search-icon" width="15" height="15">
+                  <a href="system-settings.html">Settings</a>
+                </li>
+                <li>
+                  <img src="./images/logout.png" alt="search-icon" width="15" height="15">
+                  <a href="system-settings.html">Log Out</a>
+                </li>
+             
+              
                 </ul>
               
         </div>
@@ -71,14 +74,12 @@
         <div class="footer">Footer</div>
     </div>  
     <script>
-        // Function to get the formatted date
+        
 function getFormattedDate() {
   const date = new Date();
   const options = { weekday: 'long', day: 'numeric', month: 'long' };
   return date.toLocaleDateString('en-US', options);
 }
-
-// Update the date element with the formatted date
 document.getElementById('date').textContent = getFormattedDate();
 
     </script>
