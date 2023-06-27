@@ -3,7 +3,7 @@ body {
  
   margin: 0;
   padding: 0;
-  font-family: 'Lato';
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .container{
@@ -25,7 +25,6 @@ body {
     display: flex;
   justify-content: space-between;
   align-items: center;
-
 grid-area: 1/2/1/3;
 }
 
@@ -42,7 +41,6 @@ grid-area: 1/2/1/3;
     outline: none; 
     background-color: transparent;
     border: none;
-   
     padding: 5px;
     transition: background-color 0.3s;
   }
@@ -85,11 +83,14 @@ grid-area: 1/2/1/3;
    align-self: center;
   }
 .main{
-    background-color: #f4f5f9;
+    background-color: #f0f0fb;
     grid-area: 2/2/5/2;
+  
+    justify-content: space-around;
+    position: relative;
 }
 .footer{
-    background-color: coral;
+    background-color: #0d131c;
     grid-area: 5/1/5/4;
 }
 .date-container {
@@ -137,19 +138,24 @@ grid-area: 1/2/1/3;
     text-decoration: none; 
    
   }
+  .list li:nth-child(1),
+.list li:nth-child(6),
+.list li:nth-child(7),
+.list li:nth-child(8) {
+    letter-spacing: 1px;
+}
   
   .list li a {
+    font-size: 18px;
     text-decoration: none; 
-    
     color: white;
   }
   
   
   .list li img {
+    margin-right: 9px;
      filter:brightness(0) invert(5) sepia(5) saturate(13) hue-rotate(160deg);
   }
-
-
 
 .sidebar li:hover {
   transform: scale(1.1);
@@ -175,3 +181,172 @@ grid-area: 1/2/1/3;
     background-color: #7dc9d3;
     z-index: -1;
   }  
+  
+  .pie-chart {
+	background:
+		radial-gradient(
+			circle closest-side,
+			white 0,
+			white 38.88%,
+			transparent 38.88%,
+			transparent 54%,
+			white 0
+		),
+		conic-gradient(
+			from 107deg,
+			#d23251 0,
+			#d23251 38%,
+			#edd616 0,
+			#edd616 61%,
+            #2261bb 0,
+			#2261bb 100%
+	);
+	position: relative;
+	width: 350px;
+	height: 239px;
+	margin-top: 2rem;
+    margin-left: 2rem;
+	
+}
+
+
+.pie-chart figcaption {
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+	font-size: smaller;
+	text-align: right;
+}
+.pie-chart span:after {
+	display: inline-block;
+	content: "";
+	width: 0.8em;
+	height: 0.8em;
+	margin-left: 0.4em;
+	height: 0.8em;
+	border-radius: 0.2em;
+	background: currentColor;
+}
+.blue {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin-top: 2rem;
+    column-gap:26px;
+   
+}
+#black{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: white;
+   
+    height: 85px;
+    width: 234px;
+    padding: 10px;
+}
+
+.blue img {
+    width: 50px;
+    height: 85px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.number {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.name {
+    margin-top: 5px;
+}
+#max{
+    display: flex;
+    column-gap:26px;
+    
+}
+#red,#reds,#rxd,.pie-chart,.image-container{
+    border-radius: 10px;
+    background-color: white;
+}
+#red{
+    width: 354px;
+	height: 268px;
+    margin-left: 50px;
+   
+   
+}
+#red p{
+    font-size: 1.3em;
+    color: #c1c4cd;
+    margin-left: 19px;
+}
+.statuses{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+   
+}
+.statuses li span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    height: 100%;
+}
+statuses li:first-child {
+    margin-top: 0px; /* Adjust the value as needed */
+}
+.statuses li {
+    margin-bottom: 17px;
+    position: relative;
+}
+.statuses li::marker {
+    font-size: 21px
+}
+.statuses li:nth-child(1)::marker {
+    color: #c1c4cd;
+}
+
+.statuses li:nth-child(2)::marker {
+    color: #2261bd;
+    
+}
+
+.statuses li:nth-child(3)::marker {
+    color: #eed714;
+}
+
+.statuses li:nth-child(4)::marker {
+    color: #24b3c5;
+}
+
+.statuses li:nth-child(5)::marker {
+    color: #d23554;
+}
+#reds{
+  
+    height: 268px;
+    width: 252px;
+    margin-left: 16px;
+}
+#rxd{
+   
+    height: 268px;
+    width: 537px;
+}
